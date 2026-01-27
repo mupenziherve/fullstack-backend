@@ -7,5 +7,5 @@ app.get("/", (req,res)=> {
 });
 
 app.listen(5001, () => {
-    console.log();
+    console.log("wow it's working");
 })
