@@ -1,16 +1,15 @@
-const express = require("express");
-const connectDB = require("./config/db");
+const express = require('express')
+const connectDB = require('./config/db')
 
-const app = express();
-connectDB();
+const app = express()
+connectDB()
 
-app.use(express.json());
+app.use(express.json())
 
-app.get("/",(req,res)=>{
-    res.send("API is running");
+app.get('/', (req, res) => {
+  res.send('API is running')
 })
 
-app.listen(5000, ()=>{
-    console.log()
-
+app.listen(5000, () => {
+  console.log('Server running on port 5000')
 })
